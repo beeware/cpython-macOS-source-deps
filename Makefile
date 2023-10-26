@@ -15,7 +15,7 @@ OS_LIST=macOS
 # The versions to compile by default.
 # In practice, these should be
 # This can be overwritten at build time:
-# e.g., `make iOS BZIP2_VERSION=1.2.3`
+# e.g., `make BZip2 BZIP2_VERSION=1.2.3`
 
 BUILD_NUMBER=custom
 
@@ -267,16 +267,13 @@ vars-$(target):
 	@echo "BZIP2_SRCDIR-$(target): $$(BZIP2_SRCDIR-$(target))"
 	@echo "BZIP2_INSTALL-$(target): $$(BZIP2_INSTALL-$(target))"
 	@echo "BZIP2_LIB-$(target): $$(BZIP2_LIB-$(target))"
-	@echo "BZIP2_DIST-$(target): $$(BZIP2_DIST-$(target))"
 	@echo "XZ_SRCDIR-$(target): $$(XZ_SRCDIR-$(target))"
 	@echo "XZ_INSTALL-$(target): $$(XZ_INSTALL-$(target))"
 	@echo "XZ_LIB-$(target): $$(XZ_LIB-$(target))"
-	@echo "XZ_DIST-$(target): $$(XZ_DIST-$(target))"
 	@echo "OPENSSL_SRCDIR-$(target): $$(OPENSSL_SRCDIR-$(target))"
 	@echo "OPENSSL_INSTALL-$(target): $$(OPENSSL_INSTALL-$(target))"
 	@echo "OPENSSL_SSL_LIB-$(target): $$(OPENSSL_SSL_LIB-$(target))"
 	@echo "OPENSSL_CRYPTO_LIB-$(target): $$(OPENCRYPTO_SSL_LIB-$(target))"
-	@echo "OPENSSL_DIST-$(target): $$(OPENSSL_DIST-$(target))"
 	@echo
 
 endef # build-target
