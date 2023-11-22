@@ -1,6 +1,13 @@
 CPython macOS source dependencies
 =================================
 
+**NOTE: This repo has been archived.** It reflects code that was originally used in `the
+Python-Apple-support repo <https://github.com/beeware/Python-Apple-support>`__; however,
+the Apple support packages for macOS are now derived from the official `python.org
+<https://python.org/downloads>`__ releases. There is a `companion repository
+<https://github.com/beeware/cpython-macOS-source-deps/releases>`__ that contains recipes
+for the same dependenencies, built for iOS, tvOS and watchOS.
+
 A meta-package for building the binary packages for macOS that a
 CPython build requires. This includes:
 
@@ -26,7 +33,7 @@ Apple platform, it will have already been linked using these libraries.
 
 If you *do* need to link against these libraries for some reason, you can use
 the pre-compiled versions that are published on the `Github releases page
-<https://github.com/beeware/cpython-apple-source-deps/releases>`__. You don't
+<https://github.com/beeware/cpython-macOS-source-deps/releases>`__. You don't
 need to compile them yourself.
 
 However, if you *do* need to compile your own version for some reason:
